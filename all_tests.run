@@ -1,0 +1,251 @@
+
+int a = 10;
+int b = 3;
+float f = 3.14;
+char greeting = "Hello";
+int x;
+x = 99;
+
+print(a);
+print(b);
+print(f);
+print(greeting);
+print(x);
+
+
+int sum = a + b;
+int diff = a - b;
+int prod = a * b;
+int quot = a / b;
+
+print(sum);
+print(diff);
+print(prod);
+print(quot);
+
+
+float fa = 5.5;
+float fb = 2.0;
+float fadd = fa + fb;
+float fsub = fa - fb;
+float fmul = fa * fb;
+float fdiv = fa / fb;
+
+print(fadd);
+print(fsub);
+print(fmul);
+print(fdiv);
+
+
+int p = 4;
+int q = 2;
+int paren_result = (p + q) * (p - q);
+print(paren_result);
+
+
+int g = 20;
+if (g > 10) {
+    print(g);
+}
+
+
+int h = 5;
+if (h > 10) {
+    print(100);
+}
+else {
+    print(200);
+}
+
+
+int score = 75;
+if (score >= 90) {
+    print("A grade");
+}
+else {
+    if (score >= 70) {
+        print("B grade");
+    }
+    else {
+        print("C grade");
+    }
+}
+
+
+int eq_a = 7;
+int eq_b = 7;
+if (eq_a == eq_b) {
+    print("equal");
+}
+
+int ne_a = 5;
+int ne_b = 9;
+if (ne_a != ne_b) {
+    print("not equal");
+}
+
+int le_a = 3;
+int le_b = 3;
+if (le_a <= le_b) {
+    print("less or equal");
+}
+
+int ge_a = 8;
+int ge_b = 6;
+if (ge_a >= ge_b) {
+    print("greater or equal");
+}
+
+
+int wcount = 1;
+while (wcount <= 5) {
+    print(wcount);
+    wcount = wcount + 1;
+}
+
+
+int acc = 0;
+int wn = 1;
+while (wn <= 10) {
+    acc = acc + wn;
+    wn = wn + 1;
+}
+print(acc);
+
+
+int dw = 1;
+do {
+    print(dw);
+    dw = dw + 1;
+} while (dw <= 3);
+
+
+int dcheck = 10;
+do {
+    print("do body ran");
+    dcheck = dcheck + 1;
+} while (dcheck < 5);
+
+
+int i = 0;
+for (i = 1; i <= 5; i = i + 1) {
+    print(i);
+}
+
+
+int fsum = 0;
+int fi = 0;
+for (fi = 1; fi <= 100; fi = fi + 1) {
+    fsum = fsum + fi;
+}
+print(fsum);
+
+
+int fi2 = 0;
+for (fi2 = 10; fi2 >= 1; fi2 = fi2 - 1) {
+    print(fi2);
+}
+
+
+int n = 5;
+int fact = 1;
+int fn = 0;
+for (fn = 1; fn <= n; fn = fn + 1) {
+    fact = fact * fn;
+}
+print(fact);
+
+
+int base = 2;
+int exp_val = 8;
+int power = 1;
+int ep = 0;
+for (ep = 1; ep <= exp_val; ep = ep + 1) {
+    power = power * base;
+}
+print(power);
+
+
+int nm = 7;
+switch (nm) {
+    case 1: print("one"); break;
+    case 7: print("seven"); break;
+    default: print("other"); break;
+}
+
+
+int mix = 3;
+if (mix > 0) {
+    int j = 0;
+    for (j = 1; j <= mix; j = j + 1) {
+        print(j);
+    }
+}
+
+
+int outer = 0;
+int inner = 0;
+for (outer = 1; outer <= 3; outer = outer + 1) {
+    for (inner = 1; inner <= 3; inner = inner + 1) {
+        print(inner);
+    }
+}
+
+
+float pi = 3.14159;
+int radius = 5;
+float area = pi * radius * radius;
+print(area);
+
+
+int cel = 100;
+float fahr = cel * 9 / 5 + 32;
+print(fahr);
+
+
+int big = 0;
+int num1 = 42;
+int num2 = 17;
+if (num1 > num2) {
+    big = num1;
+}
+else {
+    big = num2;
+}
+print(big);
+
+
+int fib_a = 0;
+int fib_b = 1;
+int fib_c = 0;
+int fib_i = 0;
+print(fib_a);
+print(fib_b);
+for (fib_i = 2; fib_i <= 7; fib_i = fib_i + 1) {
+    fib_c = fib_a + fib_b;
+    fib_a = fib_b;
+    fib_b = fib_c;
+    print(fib_c);
+}
+
+
+int cnt = 0;
+int cnum = 36;
+int cdivisor = 1;
+while (cdivisor <= cnum) {
+    int rem = cnum / cdivisor;
+    rem = rem * cdivisor;
+    if (cnum == rem + (cnum - rem)) {
+        cnt = cnt + 1;
+    }
+    cdivisor = cdivisor + 1;
+}
+print(cnt);
+
+
+char msg1 = "Hello World";
+char msg2 = "All is well";
+char msg3 = "Compiler Test Complete";
+print(msg1);
+print(msg2);
+print(msg3);

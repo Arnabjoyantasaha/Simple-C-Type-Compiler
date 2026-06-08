@@ -1,0 +1,71 @@
+win_flex cfg.l
+win_bison -y -d parser.y
+gcc lex.yy.c y.tab.c -o a.exe
+a.exe
+
+int a = 10;
+int b = 20;
+float pi = 3.1416;
+int f = b / a;   
+int s = a * b;
+int g = a - b;
+int sum = a + b;
+
+print("=== Variable Declaration & Basic Arithmetic ===");
+print("a =");
+print(a);
+print("b =");
+print(b);
+print("pi =");
+print(pi);
+print("f = b/a (integer div) =");
+print(f);
+print("s = a*b =");
+print(s);
+print("g = a-b =");
+print(g);
+print("sum = a+b =");
+print(sum);
+
+print("=== If-Else Testing ===");
+if (a > b) {
+    print("a is bigger than b");
+} else {
+    print("b is bigger or equal");
+}
+
+if (a < b) {
+    print("a is smaller than b - Correct");
+} else {
+    print("Wrong branch");
+}
+
+print("=== While Loop Testing ===");
+int i = 0;
+while (i < 8) {
+    print("Loop i =");
+    print(i);
+    i = i + 1;
+}
+
+print("=== Do-While Loop Testing ===");
+int j = 0;
+do {
+    print("Do-While j =");
+    print(j);
+    j = j + 1;
+} while (j < 5);
+
+print("=== String Printing ===");
+print("Hello");
+print("Value of pi is");
+print(pi);
+
+print("=== Complex Expression ===");
+int x = (a + b) * 2 - (b / a);
+print("Complex expr (a+b)*2 - (b/a) =");
+print(x);
+
+print("=== Multiple Statements & Final Output ===");
+print("All tests completed successfully!");
+print("Compiler is working well.");
